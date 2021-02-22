@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Muovere Le Montagne è un blog per la promozione della valle stura"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pattaya|Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <title>Muovere Le Montagne | Admin</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">Muovere Le Montagne</h1>
+        <ul>
+          <li><a href="../index.html">Blog</a></li>
+          <li><input type="text" name="cerca" placeholder="Cerca Post" id="cerca"></li>
+          <li><a href="#Disconneti">Esci</a></li>
+          <li><a href="#Pubblica">Pubblica</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hello">
+          <h4 id="sessionName">Nome Utente</h4>
+        </div>
+      </section>
+      <section id="articoli">
+        <div class="cards">
+          <div class="card">
+            <h4 class="card-title">Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed
+              deleniti modi ipsa blanditiis incidunt!
+            </p>
+            <button class="btnLeggi" onclick="openPost()">Leggi</button>
+            <button class="btnElimina" onclick="deletePost()">Elimina</button>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed
+              deleniti modi ipsa blanditiis incidunt!
+            </p>
+            <button class="btnLeggi" onclick="openPost()">Leggi</button>
+            <button class="btnElimina" onclick="deletePost()">Elimina</button>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed
+              deleniti modi ipsa blanditiis incidunt!
+            </p>
+            <button class="btnLeggi" onclick="openPost()">Leggi</button>
+            <button class="btnElimina" onclick="deletePost()">Elimina</button>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed
+              deleniti modi ipsa blanditiis incidunt!
+            </p>
+            <button class="btnLeggi" onclick="openPost()">Leggi</button>
+            <button class="btnElimina" onclick="deletePost()">Elimina</button>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed
+              deleniti modi ipsa blanditiis incidunt!
+            </p>
+            <button class="btnLeggi" onclick="openPost()">Leggi</button>
+            <button class="btnElimina" onclick="deletePost()">Elimina</button>
+          </div>
+        </div>
+        <div class="fullPost-container">
+          <div class="fullPost-popup">
+            <div class="title">
+              <h4>TITLE</h4>
+              <button class="closer" onclick="closePost()">X</button>
+            </div>  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perferendis est autem aperiam commodi nam quas porro ducimus consectetur facere excepturi, at sequi doloribus! Quis similique magni eius officia architecto?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cupiditate sint. Ea laboriosam nobis mollitia provident culpa praesentium sint veritatis cum unde, itaque qui fuga dolorum cumque tempore quasi deserunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestias fuga, assumenda voluptatem perferendis ipsam quibusdam atque odio ut repellat corrupti incidunt dolore nam soluta sint error ex sit unde.
+                .fullPost-popup-active h4{
+                  padding: 1rem;
+                  font-size: 4rem;
+                  width: 100%;
+                  background-color: #27394e;
+                  color: white;
+                  border-radius: 3rem 3rem 0rem 0rem;
+                }
+                .fullPost-popup-active h4{
+                  padding: 1rem;
+                  font-size: 4rem;
+                  width: 100%;
+                  background-color: #27394e;
+                  color: white;
+                  border-radius: 3rem 3rem 0rem 0rem;
+                }
+              </p>
+              <button class="btnClosePopup" onclick="closePost()">Chiudi</button>
+            </div>
+      </div>
+      </section>
+        <section id="newPost">
+            <div class="form-wrapper">
+              <header class="form-head">
+                <h2>Pubblica Un Nuovo Post</h2>
+              </header>
+              <form action="">
+                <div class="title-form">
+                  <label for="title" id="lblTitle">Titolo:</label>
+                  <input id="title" type="text" name="title"  required minlength="1" placeholder="Titolo del Post"/>
+                </div>
+                <div class="article-form">
+                  <label for="article">Articolo:</label>
+                  <textarea id="article" placeholder="Inserire il testo dell'articolo" 
+                 cols="35" rows="4"/></textarea>
+                </div>
+                <button value="Pubblica" type="submit">Pubblica</button>
+              </form>
+            </div>
+          </section>
+    </main>
+    <footer>    
+      <div class="footer-wrapper">
+        <h5>Blog &copy;</h5>
+        <ul>
+          <li>
+            <a href="#" title="twitter-social-media"
+              ><img src="../icons/twitter.svg" alt="twitter-social-media"
+            /></a>
+          </li>
+          <li>
+            <a href="#" title="youtube-social-media"
+              ><img src="../icons/youtube.svg" alt="youtube-social-media"
+            /></a>
+          </li>
+          <li>
+            <a href="#" title="instagram-social-media"
+              ><img src="../icons/instagram.svg" alt="instagram-social-media"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

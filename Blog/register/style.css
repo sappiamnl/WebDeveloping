@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(rgba(39, 57, 78, 0.89),rgba(35, 153, 199, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#register {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-wrapper {
+  
+    background: rgba(255, 255, 255, 0.822);
+    width: 60%;
+    color: rgb(110, 110, 110);
+    border-radius: 3rem;
+    padding: 3rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;    
+}
+  .form-head {
+    text-align: center;
+    padding: 0rem 4rem 1rem 4rem;
+  }
+  .user-form,
+  .password-form,
+  .email-form{
+    padding: 1rem;
+    text-align: center;
+    
+  }
+  .form-wrapper label {
+    margin: 2rem;
+  }
+ 
+  .form-wrapper button {
+    display: flex;
+    width: 30%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    color: white;
+    background-color:rgba(14, 65, 94, 0.5);
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 2px 20px 20px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    float: right;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+
+  }
+  .form-wrapper button:hover{
+    background: rgba(39, 57, 78, 0.89);
+    animation: cardHover 0.8s ease-in-out forwards;
+  }
+  .form-wrapper input {
+    padding: 1rem 1rem;
+    width: 35rem;
+    background-color: rgba(239, 245, 248, 0.733);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 2px 20px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+
+  }
+  #lblEmail  {
+    margin-right: 6rem;
+
+  }
+
+  .form-wrapper p{
+    display: flex;
+    color: rgb(110, 110, 110);
+    margin-top: 5rem;
+    margin-left: 2rem;
+    float: left;
+
+  }
+
+  .form-wrapper a{
+    display: flex;
+    color: rgba(14, 65, 94, 0.5);
+    text-decoration: underline;
+
+  }

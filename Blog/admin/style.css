@@ -1,0 +1,236 @@
+/* Stili Globali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(rgba(42, 125, 180, 0.233), rgba(127, 15, 161, 0.137));
+
+    animation: opening 1.2s ease-in-out forwards;
+  }
+  
+  h1 {
+    font-size: 2.6rem;
+  }
+  li,
+  button,
+  label,
+  input,
+  p {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  h4,
+  h5 {
+    font-size: 2.8rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  
+  /* Sezione Navbar e prinma pagina*/
+  
+
+  .main-head {
+    background: #131c27;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+  }
+  nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  #logo {
+    flex: 2 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+  }
+
+  #sessionName{
+    color:rgb(255, 255, 255);
+    font-size: 5rem;
+    margin: 2rem 0rem 0rem 11rem;
+  }
+
+  .btnElimina{
+    padding: 1rem 0.5em;
+    margin: 0.5rem;
+    border: none;
+    background: #b61a1a;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+    color: white;
+  }
+  
+  .btnElimina:hover{
+    background: #610f0f;
+  }
+  /*sezione nuovo post */
+#newPost {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+form{
+    padding-left: 3rem;
+    padding-right: 3rem ;
+}
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: rgb(84, 114, 150);
+    width: 60%;
+    color: white;
+    border-radius: 3rem;
+    padding: 3rem;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.1), 25px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 11rem;
+  }
+  .form-head {
+    text-align: center;
+    padding: 0rem 4rem 1rem 4rem;
+  }
+  .title-form,
+  .article-form {
+    padding: 1rem;
+    
+  }
+  .form-wrapper label {
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+ 
+  .form-wrapper button {
+      display: flex;
+    width: 30%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    color: white;
+    background-color:rgba(59, 141, 196, 0.5);
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 2px 20px 20px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    float: right;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .form-wrapper button:hover{
+    background: #3e5e8f5e;
+    animation: cardHover 0.8s ease-in-out forwards;
+  }
+  .form-wrapper input {
+    padding: 1rem 1rem;
+    width: 35rem;
+    background-color: rgb(249, 253, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 2px 20px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+
+  }
+  .form-wrapper textarea{
+      padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(249, 253, 255);
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 2px 20px 20px rgba(0, 0, 0, 0.1);
+
+  }
+  /* Footer Section */
+
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+  }
+  .footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+  }
+  footer h5 {
+    flex: 1 1 40rem;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button:focus {
+    background: #2c3f57;
+    outline-style: solid;
+    outline-color: cornflowerblue;
+  }
+  
+  /* Media Query */
+  @media screen and (max-width: 932px) {
+    html {
+      font-size: 45%;
+    }
+    nav {
+      text-align: center;
+    }
+    #logo {
+      padding: 2rem;
+    }
+    
+    .locations-head h3 {
+      background: rgba(19, 28, 39, 0.9);
+      -webkit-text-fill-color: white;
+    }
+    .form-wrapper {
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+    }
+    footer h5 {
+      padding-bottom: 3rem;
+    }
+  }
+  
+  @keyframes btnHover {
+    from {
+      transform: scale(1.0);
+    }
+    to {
+      transform: scale(1.1);
+    }
+   
+  }
